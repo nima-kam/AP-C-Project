@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_FIRST"
         mc:Ignorable="d"
-        Title="First window" Height="700" Width="400">
+        Title="First window" Height="500" Width="400">
     <Border Padding="10">
         <StackPanel >
             <!-- BOTTONS -->
@@ -16,16 +16,59 @@
                     <ColumnDefinition Width="*"/>
 
                 </Grid.ColumnDefinitions>
-                <Button Content="SAVE" Grid.Column="0" Margin="10 0 20 10"/>
-                <Button Content="LOAD" Grid.Column="1" Margin="20 0 20 10"/>
-                <Button Content="R" Grid.Column="2" Margin="15 0 10 10"/>
-            </Grid>    
-            <Button Content=" NEW " Margin="10,10,10,10"/>
+                <Button x:Name="SAVE" Click="SAVE_Click" Background="Beige" Content="SAVE" Grid.Column="0" Margin="10 0 20 10"/>
+                <Button x:Name="LOAD" Click="LOAD_Click" Background="Beige" Content="LOAD" Grid.Column="1" Margin="20 0 20 10"/>
+                <Button x:Name="R"  Click="R_Click" Background="Beige" Content="R" Grid.Column="2" Margin="15 0 10 10"/>
+            </Grid>
+            <Button x:Name="NEWButton" Click="NEWButton_Click" Background="Beige" Content=" NEW " Margin="10,10,10,10"/>
+            <!--city -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="CHECK BOXS " FontSize="15" FontWeight="Bold" Margin="10 0 0 0" Grid.Column="0"/>
+                <TextBlock Text="City " FontSize="15" FontWeight="Bold" Margin="10 0 0 0" Grid.Column="1"/>
+                
+            </Grid>
             <!--check boxs -->
-            
-            <TextBlock Text="CHECK BOXS " FontSize="15" FontWeight="Bold" Margin="10 0 0 0"/>
-            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="2" Margin="0 10 10 10">
+                    <ComboBox Background="Bisque" Name="cities" SelectedIndex="0"  Grid.Column="2" Margin="10 10" >
+                        <ComboBoxItem>Tehran</ComboBoxItem>
+                        <ComboBoxItem>Mashhad</ComboBoxItem>
+                        <ComboBoxItem>Shiraz</ComboBoxItem>
+                    </ComboBox>
 
+                </StackPanel>
+                
+                <StackPanel Grid.Column="0" Margin="10">
+                    <CheckBox x:Name="CarCheckBox"   Content="Car" FontSize="13"  Margin=" 5"/>
+                    <CheckBox x:Name="MetroCheckBox" Content="Metro" FontSize="13"  Margin=" 5"/>
+
+
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="10">
+                    <CheckBox x:Name="BusCheckBox"   Content="Bus" FontSize="13"  Margin=" 5"/>
+                    <CheckBox x:Name="TaxiCheckBox" Content="Taxi" FontSize="13"  Margin=" 5"/>
+                    
+                    
+                </StackPanel>             
+            </Grid>
+            <!--Text boxs-->
+            <TextBlock Text="Text Box " FontSize="15" FontWeight="Bold" Margin="10 0 0 0" Grid.Column="0"/>
+            <TextBox x:Name="TextBox" Height="80" AcceptsReturn="True" TextWrapping="Wrap"  Padding="8 8" Background="Azure" BorderThickness="3" BorderBrush="Black " Margin="10 0"/>
+            <!--next button-->
+            <Button  Content="Next page" Width="85" x:Name="NextPageButton" Click="NextPageButton_Click" Background="Beige" Margin="10 20"/>
+            
+            
+            
         </StackPanel>
         
         

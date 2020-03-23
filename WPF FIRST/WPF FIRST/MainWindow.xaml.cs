@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace WPF_FIRST
 {
@@ -23,6 +23,41 @@ namespace WPF_FIRST
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void NextPageButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SAVE_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LOAD_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void R_Click(object sender, RoutedEventArgs e)
+        {
+            
+            MessageBox.Show($"{this.TextBox.Text}\nReset");
+            this.TextBox.Text = string.Empty;
+            this.CarCheckBox.IsChecked = false;
+            this.MetroCheckBox.IsChecked = false;
+            this.BusCheckBox.IsChecked = false;
+            this.TaxiCheckBox.IsChecked = false;
+            
+
+
+
+        }
+            
+        private void NEWButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
