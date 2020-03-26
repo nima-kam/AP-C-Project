@@ -27,7 +27,8 @@ namespace WPF_FIRST
 
         private void NextPageButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Tab_control.SelectedItem = second_page;
+            
         }
 
         private void SAVE_Click(object sender, RoutedEventArgs e)
@@ -58,6 +59,11 @@ namespace WPF_FIRST
         private void NEWButton_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Back_button_Click(object sender, RoutedEventArgs e)
+        {
+            Tab_control.SelectedItem = first_page;
         }
     }
 }
