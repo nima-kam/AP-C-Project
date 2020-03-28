@@ -105,17 +105,17 @@
                     <!--Family-->
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Family :" Margin="10 10 10 10" FontStyle="Normal" FontWeight="DemiBold"/>
-                        <TextBox  Width="170" Margin="11 8" BorderThickness="2" />
+                        <TextBox  Width="170" Margin="11 8" BorderThickness="2" Background="Azure"/>
                     </StackPanel>
                     <!--Age-->
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Age :" Margin="10 10 10 10" FontStyle="Normal" FontWeight="DemiBold"/>
-                        <TextBox  Width="50" Margin="24 8" BorderThickness="2"/>
+                        <TextBox  Width="50" Margin="24 8" BorderThickness="2" Background="Azure"/>
                     </StackPanel>
                     <!--Equation-->
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Equation :" Margin="10 10 0 10" FontStyle="Normal" FontWeight="DemiBold"/>
-                        <TextBox  Width="170" Margin="8" BorderThickness="2"/>
+                        <TextBox  Width="170" Margin="8" BorderThickness="2" Background="Azure"/>
                     </StackPanel>
                     <Image Margin="77,10,125,0" Height="192" RenderTransformOrigin="0,0" >
                         <Image.Source>
